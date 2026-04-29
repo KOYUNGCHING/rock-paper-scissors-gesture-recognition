@@ -59,17 +59,19 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 2. Install dependencies
-
+```bash
 python -m pip install -r requirements.txt
-
+```
 3. Create custom landmark dataset
+```bash
 python create_custom_dataset.py
-
+```
 This will generate:gesture_landmarks_custom.csv
 
 4. Train model
+```bash
 python train_model.py
-
+```
 This will generate:
 - gesture_tf_model.keras
 - label_encoder.pkl
@@ -80,5 +82,6 @@ This will generate:
 5. Predict a new image
 
 Put a test image in the project folder and update the image path in predict_image.py.
-
+```bash
 python predict_image.py
+```
